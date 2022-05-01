@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<!--
+*****************************************************************************
+Title: Box 12 Farm
+Use: This document displays the Farm to Table Dinner page for the Box 12 Farm Website
+Author: Molly Vangeison
+School/Term: Southern Illinois University, Spring 2022
+Developed: April 23, 2022
+Tested: April 24, 2022; Passed on Firefox and Chrome browsers.
+******************************************************************************
+--> 
+
+<meta charset="utf-8">
+<meta name="description" content = "hobby farm in Stonington, IL">
+<meta name="keywords" content = "farm, Stonington, pumpkin, produce">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slicknav.min.css"> <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> <script src="js/jquery.slicknav.min.js"></script> <script type="text/javascript"> $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); }); </script>  
+ <title>Box 12 Farm</title>
+<link rel="shortcut icon" href="favicon.ico">    
+</head>
+    
+<body>
+    <nav id="mobile_menu"></nav> 
+    <div class="sidenav">
+    <div class="logo">
+        <a href="index.html">Box 12 Farm</a></div>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="farmstand.html">Farm Stand</a>
+    <a href="farmtotable.html">Farm to Table</a>   
+    <a href="aboutus.html">History of Box 12</a>
+        
+    <audio id="audioplayer" controls autoplay loop>
+           <source src="582355__pianofarm__bees-on-a-corn-red-shoulder-chickens-ambience-07-14-2020.m4a" type="audio/mpeg">
+    </audio>
+    <iframe src="582355__pianofarm__bees-on-a-corn-red-shoulder-chickens-ambience-07-14-2020.m4a" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>      
+    </div>
+    <div class="banner">
+        <img class="banner-image" src="field-5065671_1920.jpg">
+    </div>
+    <div class='main'>
+        <h1>Farm to Table Dinners</h1>
+        <p>More than ever, we are disconnected from where our food comes from. What better way is there to learn more about the food we eat than to visit the farm and see how it is grown? Box 12 Farms is a centennial farm in central Illinois that is now offering the community to tour the farm while enjoying delicous food prepared by some amazing chefs. Our tours run from April to November. It includes afternoon of learning and enjoying the fruits of the land. The Farm to Table dinners allow the chance to meet the farm families behind the products, see our animals first-hand, and ask questions about raising and processing livestock.  The afternoon will start out with a snack and beverages after all the guests arrive. Following our snack, we will begin the farm tour. Guests will have the opportunity to ask questions, hold baby chicks, gather fresh eggs, and interact with our goats. Meals are taken on the veranda. All food is prepared in a separate barn (not used by our livestock). In case of inclement weather, the dinner will served in this barn. The barn can also be rented out for private events. 
+<br>
+<br>            
+The experience runs from 4 - 8 PM. Tickets are $70.00 a person. Lemonade and water will be provided. Craft beers from local breweries such as Hand of Fate, Anvil and Forge, and Buzz Bomb will be availabe for purchase, as well as a selection of wine, either by glass or bottle. Children are welcome as long as they are accompanied and supervised by an adult. All ticket sales are non-refundable. If you cannot attend the event anymore, you may transfer your tickets to another person .</p>    
+                                
+    
+
+ <form id="contact" action="response.htm" method="get">
+    Full Name:<input type="text" id="name" minlength="15" maxlength="25" required><br><br>
+    Address:<input type="text" id="address" minlength="15" maxlength="50" required><br><br>
+    City:<input type="text" id="name" minlength="4" maxlength="25" required><br><br>
+    State:<select id="state" required>
+            <optgroup label="State">
+                <option value="illinois">IL</option>
+                <option value="indiana">IN</option>
+                <option value="kentucky">KY</option>
+                <option value="michigan">MI</option>
+                <option value="missouri">MO</option>
+            </optgroup>
+    </select>
+    <br><br>
+    Zip Code:<input type="text" id="zip" minlength="5" maxlength="10" required
+            pattern="\d{5}([\-]\d{4})?"
+            title="Must be 99999 or 99999-9999"><br><br>
+    Phone:<input type="tel" id="phone" minlength="10" maxlength="12" required
+        pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+        title="Must be 999-999-9999"><br><br>
+    Email Address:<input type="email" id="email" minlength="10" maxlength="25" required><br><br>
+    Farm to Table Date:<select id="date" required>
+            <optgroup label="Date of Event">
+                <option value="may7">May 7, 2022</option>
+                <option value="may14">May 14, 2022</option>
+                <option value="may21">May 21, 2022</option>
+                <option value="may28">May 28, 2022</option>
+                <option value="jun4">June 4, 2022</option>
+            </optgroup>
+     </select>
+    <br>
+    <br> 
+    <fieldset required>
+        <legend>Entree</legend><br>
+        <p>All entrees are served with a garden salad and rustic bread.</p>
+            <input type="checkbox" name="entree_type" value="meat">Half Cornish Chicken served with summer squash, mashed potatoes, chicken demi<br> 
+            <input type="checkbox" name="entree_type" value="vegetarian">Mushroom Risotto and Roasted Beets served with Goat Cheese and Box 12 Honey<br>
+            <input type="checkbox" name="entree_type" value="vegan">Farm Ratatouille served with Caramelized Onion Soup<br><br>
+    </fieldset>
+    <br>
+    <p>We accomodate as much as possible for food allergies and intolerances. Please select any below that may apply:</p> 
+        <fieldset required>
+        <legend>Food Allergy and Intolerance</legend>
+            <input type="checkbox" name="allergy1" value="gluten">
+            <label for="allergy1">Gluten</label>
+            <input type="checkbox" name="allergy2" value="lactose">
+            <label for="allergyy2">Lactose Intolerance</label>
+            <input type="checkbox" name="allergy3" value="nut">
+            <label for="allergy3">Nut</label>
+    </fieldset>    
+    <br>
+    <fieldset required>
+        <legend>Dessert</legend><br>
+            <input type="radio" name="dessert_type" value="creme">Creme brulee, berry compote, and Box 12 Honeycomb<br> 
+            <input type="radio" name="dessert_type" value="apple">Warm apple Crisp with local vanilla ice cream<br>
+            <input type="radio" name="dessert_type" value="almond">Almond cake topped with roasted almonds and browned buttercream<br><br>
+    </fieldset> 
+    <br>
+    <p>Is there anything additional the chefs should know to make your dining experience more pleasant?</p> 
+    Message:<br>
+    <textarea id="comments" 
+              placeholder="Your Message"> 
+    </textarea><br><br>
+    <input type="submit" id="send" value="Send">
+    <input type="reset" id="reset" value="Reset">
+    </form>            
+
+    </div>                                                 
+</body>
+</html>
