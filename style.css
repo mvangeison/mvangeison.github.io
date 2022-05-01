@@ -1,0 +1,200 @@
+<style>
+
+* {
+    margin: 0.1%; 
+}
+
+* head {
+    padding: 0.1%; 
+}
+
+
+@font-face {
+font-family: Papyrus; src: url("Papyrus.TTF"); }
+
+
+body {
+    background-color: darkolivegreen;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: olivedrab;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-family: Papyrus;
+  font-size: 25px;
+  color: #D6862E;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.logo {
+    color: sandybrown;
+    font-family: Papyrus;
+    padding: 25px 0 25px 0;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.banner{
+    width: 100%;
+    display: block;
+    
+}
+
+.banner > banner-image {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+.banner-text {
+    text-align: center;
+    font-family: Papyrus;
+    font-size: 300%;
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    align-content: flex-end
+}
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    align-content: flex-end;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+h1 {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    text-align: center;
+    padding: 0.1%;
+    color: #D6862E;
+    font-family: Papyrus;
+    font-size: 150%;
+}
+h2 {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    text-align: center;
+    padding: 0.1%;
+    color: #D6862E;
+    font-family: Papyrus;
+    font-size: 125%;
+}
+h3 {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    text-align: center;
+    padding: 0.1%;
+    color: #D6862E;
+    font-family: Papyrus;
+    font-size: 100%;
+}
+
+p {
+    color: #D6862E;
+    text-align: center;
+    font-family: serif;
+    color: #D6862E;
+    font-size: 100%;
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    align-content: flex-end;
+}
+}
+ul {
+    padding-left: 10px;
+    text-align: center;
+    color: #D6862E;
+    }
+
+li {
+    padding-left: 10px;
+    text-align: center;
+    color: #D6862E;
+}
+
+image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+img {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+figure {
+    float: inherit; 
+    margin-left: 160px; /* Same as the width of the sidenav */
+    text-align: center;
+    border: thin #872807 solid;
+    padding: 0.1%;
+} 
+
+figcaption {
+    text-align: center;
+    font-weight: bold; 
+    padding-top: 0.25%; 
+    margin-left: 160px; /* Same as the width of the sidenav */
+}
+
+table {
+    border: 1px solid #870807; 
+    margin: 10px auto;
+    padding: 10 px;
+    }
+form {
+    margin: auto;
+    border: 3px solid #870807; 
+    font-family: Arial;
+    text-align:center;
+    padding: 100px;
+}
+
+label {
+    float: auto;
+    width: 5em;
+    text-align: right;} 
+input{
+    margin-left: 1em; 
+    margin-bottom: .5em;}
+
+input[required]
+
+input:required {
+  background-color: olivedrab;
+}
+textarea {
+height: 5em; width: 25em;
+font-family: Arial;
+color:black}
+
+#button { 
+    margin-left: 7em;}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
